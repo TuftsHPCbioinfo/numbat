@@ -1,8 +1,5 @@
 FROM rocker/tidyverse:4.5.0
 
-LABEL authors="Yucheng Zhang <yzhang85@tufts.edu>",
-    description="r-base image to run numbat with R"
-
 RUN apt-get update --yes && apt-get install --yes build-essential \
   libcurl4-gnutls-dev libxml2-dev libssl-dev libbz2-dev zlib1g-dev \
   libfontconfig1-dev libharfbuzz-dev libfribidi-dev \
